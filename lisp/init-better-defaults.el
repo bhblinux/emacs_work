@@ -44,7 +44,6 @@
 (setq-default pathname-coding-system 'utf-8)
 (set-file-name-coding-system 'utf-8)
 ;; 解决 Shell Mode(cmd) 下中文乱码问题
-
 ;;(modify-coding-system-alist 'process "*" 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
 ;;
