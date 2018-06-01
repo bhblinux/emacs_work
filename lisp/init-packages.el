@@ -111,6 +111,26 @@
 ;;ace-window
 ;;多窗口切换
 (global-set-key (kbd "M-o") 'ace-window)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;; 文件末尾
 (provide 'init-packages)
 

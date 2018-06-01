@@ -27,7 +27,7 @@
 
 
 ;;字符集
-(set-language-environment "UTF-8")
+(set-language-environment "Chinese-GB")
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
@@ -35,6 +35,16 @@
 (set-buffer-file-coding-system 'utf-8)
 ;;(set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+;; 解决粘贴中文出现乱码的问题
+(set-clipboard-coding-system 'utf-8)
+;; 终端中文乱码
+(set-terminal-coding-system 'utf-8)
+
+;; 解决文件目录的中文名乱码
+(setq-default pathname-coding-system 'utf-8)
+(set-file-name-coding-system 'utf-8)
+;; 解决 Shell Mode(cmd) 下中文乱码问题
+
 ;;(modify-coding-system-alist 'process "*" 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
 ;;
